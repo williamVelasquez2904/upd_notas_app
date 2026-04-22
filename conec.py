@@ -1,8 +1,8 @@
 import pymysql
 
 def get_connection():
-    servidor = "local"  # Cambia a "remoto" si es necesario
-    #servidor = "remoto"  # Cambia a "remoto" si es necesario
+    #servidor = "local"  # Cambia a "remoto" si es necesario
+    servidor = "remoto"  # Cambia a "remoto" si es necesario
     if servidor == "local":
         return pymysql.connect(
             host="localhost",
