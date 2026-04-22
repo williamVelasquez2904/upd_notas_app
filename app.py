@@ -1,11 +1,10 @@
-# Fecha de actualización: 28 marzo 2026
+# Fecha de actualización: 21 abril  2026
 # Mejoras:
 # - Fix definitivo documento (sin .0)
 # - dtype controlado en Excel
 # - clean() robusto
 # - Logs optimizados
 # - Código más limpio y modular
-
 
 import streamlit as st
 import pandas as pd
@@ -28,7 +27,7 @@ def login_form():
         # Cambia estos valores por los que desees
         if username == "admin" and password == "1234":
             st.session_state["logged_in"] = True
-            st.success("¡Bienvenido!")
+            st.success("¡Bienvenido a la app de Migrar datos!")
             st.rerun()
         else:
             st.error("Usuario o contraseña incorrectos")
@@ -45,7 +44,7 @@ if not st.session_state["logged_in"]:
 # ==========================
 # CONFIGURACIÓN
 # ==========================
-st.title("Carga y procesamiento de compras y ventas")
+st.title("Carga y procesamiento de NOTAS y COBRANZAS")
 
 
 TABLE_NAME = "wh_tbl_compra"
